@@ -166,33 +166,9 @@ header {
     font-family: 'robotomedium';
 }
 
-.txt1 {
-    color: white;
-    font-family: 'robotoblack_italic';
-}
-
 .ti {
     position: relative;
 }
-
-
-/* height: 26px;
-
-/* position: absolute; */
-
-
-/* top: -15px; */
-
-
-/* left: 50%; */
-
-
-/* display: flex; */
-
-
-/* align-items: center; 
-
-padding: 0 30px;*/
 
 .index {
     height: 26px;
@@ -215,34 +191,30 @@ padding: 0 30px;*/
     margin-top: 15px;
 }
 
-.bouton1 {
-    flex: 1 1 auto;
-    border-radius: 0 !important;
-    border: none;
-}
-
-.bouton1:active,
-.bouton1:focus {
-    border: none !important;
-}
-
 .search {
     text-transform: uppercase;
     font-family: 'robotomedium_italic';
 }
 
 .input-field {
-    border: none;
-    background: transparent;
+    flex: 1 1 auto;
+    background: white;
     display: flex;
     font-size: 25px;
+    border: none !important;
+    resize: none;
+    outline: none;
+    opacity: 0.8;
+    padding-left: 20px;
 }
 
 .input-field:active,
 .input-field:focus,
 .input-field:hover {
-    background-color: blue;
     border: none !important;
+    border: none !important;
+    resize: none;
+    outline: none;
 }
 
 .fa-angle-down {
@@ -252,10 +224,22 @@ padding: 0 30px;*/
     margin-top: 30px;
 }
 
-.bouton2 {
+.fa-serch {
+    padding-right: 12px;
+}
+
+.books {
+    font-size: 15px;
+    font-family: 'robotomedium_italic';
+    font-weight: bolder;
+}
+
+#button2 {
     width: 16rem;
-    border: none;
     display: inherit;
+    border: none;
+    outline: none;
+    font-size: 14px;
 }
 
 footer {
@@ -282,7 +266,7 @@ footer {
     padding: 0 30px;
 }
 
-.bouton3 {
+.btn {
     width: 12rem;
     background-color: #00b386;
     display: flex;
@@ -293,6 +277,34 @@ footer {
     font-size: 26px;
     font-weight: 100;
     border: none;
+    cursor: pointer;
+}
+
+.title-firstbook {
+    color: #d266d2;
+    display: flex;
+    justify-content: center;
+    font-family: 'robotoblack';
+    margin-top: 100px;
+}
+
+.desc-firstbook {
+    color: white;
+    text-align: justify;
+    margin-top: 140px;
+    font-size: 24px;
+    margin-right: 3%;
+    font-family: 'roboto_condensedlight_italic';
+}
+
+.img-firstbook {
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 3%;
+    float: left;
+    margin-right: 3%;
+    border-radius: 15px;
+    margin-bottom: 3%;
 }
 
 .book {
@@ -333,7 +345,7 @@ a {
     font-family: 'robotoregular';
 }
 
-.title3 {
+.title-category {
     color: WHITE;
     margin-top: 3%;
     text-align: center;
@@ -342,7 +354,7 @@ a {
     font-family: 'robotothin_italic';
 }
 
-.title2 {
+.title-book {
     color: WHITE;
     margin-top: 5%;
     font-weight: 100;
@@ -353,7 +365,7 @@ a {
     font-family: 'robotomedium_italic';
 }
 
-.title1 {
+.princip-title {
     color: WHITE;
     margin-top: 5%;
     font-weight: 100;

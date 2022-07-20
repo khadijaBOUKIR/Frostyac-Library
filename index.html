@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/fontawesme/fontawesome-free-6.1.1-web/css/all.css" />
+
     <title>frostyacLibrary</title>
     <meta charset="UTF-8" />
 </head>
@@ -11,7 +12,7 @@
 <body>
     <header>
         <ul class="icons">
-            <img src="/IMAGES/logo-book-new.png" />
+            <a href="http://127.0.0.1:5500/index.html"><img src="/IMAGES/logo-book-new.png" /></a>
             <li class="d-flex">
                 <i class="fa fa-home icon"></i>
                 <a href="#" class="nav-item icon">Home</a>
@@ -34,7 +35,7 @@
     <nav>
 
         <aside class="center-t">
-            <div class="title1">Thousands of Books and Audiobooks Update Daily</div>
+            <div class="princip-title">Thousands of Books and Audiobooks Update Daily</div>
             <div class="ti">
                 <div class="trait"></div>
                 <div class="index">
@@ -45,31 +46,33 @@
         </aside>
 
         <article>
-            <div class="title2">Discover Books & Audiobooks you will love!</div>
+            <div class="title-book">Discover Books & Audiobooks you will love!</div>
         </article>
         <aside class="bouton">
-            <button class="bouton1">
-                <input class="input-field" value="" placeholder="Search..." />
-                
-            </button>
-
-            <button class="bouton2">
-                <div class="book">Book</div>
+            <input class="input-field" value="" placeholder="Search..." />
+            <select name="button2" id="dynamic_select">
+                <option class="books" value="" disabled selected>Select a book</option>
+                <option class="books" value="WHEN WOMEN WERE DRAGONS">WHEN WOMEN WERE DRAGONS</option></a>
+                <option class="books" value="BEFORE TAKEOFF">BEFORE TAKEOFF</option>
+                <option class="books" value="ARU SHAH AND THE END OF TIME">ARU SHAH AND THE END OF TIME</option>
+                <option class="books" value="THE PRINCE OF NOWHERE">THE PRINCE OF NOWHERE</option>
+                <option class="books" value="HUNTING FOR THE LAMB OF GOD">HUNTING FOR THE LAMB OF GOD</option>
+                <option class="books" value="BEWILDERNESS">BEWILDERNESS</option>
+                <option class="books" value="TWO WHEELS GOOD">TWO WHEELS GOOD</option>
+                <option class="books" value="THINGS THEY LOST">THINGS THEY LOST</option>
+                <option class="books" value="BROKEN VESSELS">BROKEN VESSELS</option>
+                <option class="books" value="AURORA">AURORA</option>
                 <i class="fa-solid fa-angle-down"></i>
-            </button>
-
-            </button>
-            <button class="bouton3">
-                <i class="fa fa-search"></i> 
-                <div class="search">search</div>
-           
+            </select>
+            <button class="btn search">
+                <i class="fa fa-search"></i> Search            
             </button>
         </aside>
         <article>
-            <div class="title3">You can also find books by category</div>
+            <div class="title-category">You can also find books by category</div>
             <ul class="c-book">
                 <li class="category">
-                    <a href="https://frostyac.com/book/genre/9007/arts-entertainment">arts entertainment</a>
+                    <a href="book.html">arts entertainment</a>
                 </li>
                 <li class="category">
                     <a href="https://frostyac.com/book/genre/9031/fiction-literature">fiction literature</a>
@@ -168,12 +171,7 @@
             </ul>
         </article>
     </nav>
-    <footer>
-        <div class="index2">
-            <div class="txt1">Popular Books</div>
-        </div>
-    </footer>
+    <script type="text/javascript" src="./app.js"></script>
 </body>
-
 
 </html>
