@@ -5,15 +5,16 @@ xx.addEventListener(
         const loc = 'book.html'
         var url = this.value;
         if (url) {
-
-
             readTextFile("./data.json", function(text) {
                 var data = JSON.parse(text);
+
                 for (i = 0; i < data.book.length; i++) {
                     // console.log(data.book[i].title)
                     if (url == data.book[i].title) {
-                        // console.log(url)
-                        // on doit envoyer l'objet data.book[i] à la page book.html
+                        localStorage.setItem('title', data.book[i].title)
+                        localStorage.setItem('images', data.book[i].Images)
+                        localStorage.setItem('description', data.book[i].description)
+
 
                         window.location = loc;
                     }
