@@ -49,7 +49,7 @@
             <div class="title-book">Discover Books & Audiobooks you will love!</div>
         </article>
         <aside class="bouton">
-            <input class="input-field" value="" placeholder="Search..." />
+            <input class="input-field" value="" placeholder="Search..." id="in" />
             <select name="button2" id="dynamic_select">
                 <option class="books" value="" disabled selected>Select a book</option>
                 <option class="books" value="BEFORE TAKEOFF">BEFORE TAKEOFF</option>
@@ -63,8 +63,8 @@
                 <option class="books" value="AURORA">AURORA</option>
                 <i class="fa-solid fa-angle-down"></i>
             </select>
-            <button class="btn search">
-                <i class="fa fa-search"></i> Search            
+            <button class="btn search" id="btn_search">
+                <i class="fa fa-search" ></i> Search            
             </button>
         </aside>
         <article>
@@ -171,6 +171,8 @@
         </article>
     </nav>
     <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./search.js"></script>
+
 </body>
 
 </html>
